@@ -148,8 +148,8 @@
       <div class="affiliate">
         <span class="eyebrow">C-DRAMA FAN PICKS</span>
         <h2 style="font-size:19px;margin:8px 0 4px">중드 필수템 구경하기 🛍️</h2>
-        <p>롼녠이 샹즈타오에게 만들어주던 그것?!</p>
-        <a class="primary" id="affiliateLink" href="https://link.coupang.com/a/h3kaS6usrA" target="_blank" rel="sponsored noopener noreferrer">추천 아이템 보러가기</a>
+        <p>구경해주시면 매우 감사드리겠습니다.</p>
+        <a class="primary" id="affiliateLink" href="https://link.coupang.com/a/h3kaS6usrA" target="_blank" rel="sponsored noopener noreferrer">롼녠이 샹즈타오에게 만들어주던 그것?!</a>
         <p class="disclosure">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
       </div>
     </section>
@@ -259,8 +259,6 @@
       }
     ];
 
-    // 결과 화면에 도달하기 전에 캐릭터 이미지를 미리 받아 둡니다.
-    // 퀴즈를 푸는 동안 이미지 다운로드가 진행되어 결과 표시가 빨라집니다.
     characters.forEach(character => {
       if (!character.image) return;
       const preloadedImage = new Image();
@@ -296,7 +294,7 @@
         ["“네가 좋아하는 걸로 골랐어”","warm"],["“다른 사람 말고 나만 봐”","cold"],["“걱정하지 마, 내가 해결할게”","bold"],["“오래전부터 너였어”","devoted"]
       ]},
       { q:"마지막! 어떤 결말이 가장 좋아?", a:[
-        ["둘이 티격태격하며 친구처럼 지내는 결말","playful"],["서로의 유일한 존재가 되는 결말","devoted"],["함께 성장하고 서로를 존중하는 결말","mature"],["오래 기다린 마음이 통하는 결말","devoted"]
+        ["티격태격하며 친구처럼 지내는 결말","playful"],["서로의 유일한 존재가 되는 결말","devoted"],["함께 성장하고 서로를 존중하는 결말","mature"],["오래 기다린 마음이 통하는 결말","devoted"]
       ]}
     ];
 
@@ -454,7 +452,6 @@
           prompt("내 결과 페이지 링크를 복사해 공유해 보세요.", resultUrl.toString());
         }
       } catch (error) {
-        // 공유 취소 시 별도 처리 불필요
       }
     });
 
